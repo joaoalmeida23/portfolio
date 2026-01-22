@@ -1,124 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>WebNext | João Almeida</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="João Almeida - Desenvolvedor Full Stack especialista em sites modernos e landing pages.">
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>João Almeida | Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">WebNext</div>
+<header class="header">
+  <h2 class="logo">WebNext</h2>
 
   <nav>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-    </ul>
-
-    <a href="https://wa.me/5511951228125" class="btn-contato" target="_blank">Contato</a>
-
-    <div class="theme-toggle" id="themeToggle">
-      🌙
-    </div>
-
-    <div class="menu-toggle" id="menuToggle">
-      ☰
-    </div>
+    <a href="#home">Início</a>
+    <a href="#projects">Projetos</a>
+    <a href="#contact">Contato</a>
   </nav>
+
+  <button id="themeToggle">🌙</button>
 </header>
 
-<!-- HERO -->
-<section id="inicio" class="hero reveal">
+<section id="home" class="hero">
   <div class="hero-text">
-    <h1>Olá, eu sou João Almeida</h1>
-    <h2>Desenvolvedor Full Stack</h2>
-
-    <p>Crio sites modernos, rápidos e focados em conversão.</p>
+    <h1>João Almeida</h1>
+    <p>Desenvolvedor Front-End & Landing Pages Profissionais</p>
 
     <div class="socials">
-      <a href="https://github.com/joaoalmeida23">GitHub</a>
-      <a href="https://www.linkedin.com/in/joao-lucas-6a5a59261/">LinkedIn</a>
-      <a href="https://www.instagram.com/webnext.dev/">Instagram</a>
-      <a href="https://wa.me/5511951228125">WhatsApp</a>
+      <a href="https://www.instagram.com/webnext.dev/" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/joao-lucas-6a5a59261/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/joaoalmeida23" target="_blank">GitHub</a>
+      <a href="https://wa.me/5511951228125" target="_blank">WhatsApp</a>
     </div>
-
-    <a href="#contato" class="btn-primary">Entre em contato</a>
   </div>
 
   <div class="hero-img">
-    <img src="GALERIA/foto1.jpeg" alt="João Almeida">
+    <img src="GALERIA/foto1.jpeg" alt="Foto João">
   </div>
 </section>
 
-<!-- SOBRE -->
-<section id="sobre" class="section reveal">
-  <h2>Sobre mim</h2>
+<section id="projects" class="projects">
+  <h2>Projetos</h2>
 
-  <p>
-    Sou desenvolvedor Full Stack apaixonado por tecnologia e criação de soluções digitais.
-    Trabalho desenvolvendo sites rápidos, responsivos e landing pages focadas em conversão.
-  </p>
+  <div class="projects-grid">
 
-  <p>
-    Possuo experiência em Front-end, Back-end e Banco de Dados, sempre buscando performance,
-    design moderno e resultados reais para clientes.
-  </p>
+    <div class="project-card">
+      <img src="GALERIA/fotografia.png">
+      <h3>Landing Page Fotografia</h3>
+      <p>Landing page moderna focada em conversão.</p>
+      <a href="https://SEULINKPROJETO1.com" target="_blank">Ver Projeto</a>
+    </div>
 
-  <ul class="skills">
-    <li>HTML, CSS, JavaScript</li>
-    <li>Java Back-end</li>
-    <li>SQL e Firebase</li>
-    <li>Git & GitHub</li>
-  </ul>
+    <div class="project-card">
+      <img src="GALERIA/clinica.png">
+      <h3>Site Clínica Estética</h3>
+      <p>Site profissional para clínica.</p>
+      <a href="https://SEULINKPROJETO2.com" target="_blank">Ver Projeto</a>
+    </div>
 
-  <a href="https://wa.me/5511951228125" class="btn-primary">Vamos conversar</a>
-</section>
-
-<!-- PROJETOS -->
-<section id="projetos" class="section dark-bg reveal">
-<h2>Projetos</h2>
-
-<div class="projects">
-
-  <div class="card">
-    <img src="GALERIA/clinica.png">
-    <h3>Clínica Odontológica</h3>
-    <p>Landing page moderna focada em conversão.</p>
-    <a href="https://joaoalmeida23.github.io/landing-odontologica/" target="_blank">Ver Projeto</a>
   </div>
-
-  <div class="card">
-    <img src="GALERIA/fotografia.png">
-    <h3>Site Empresarial</h3>
-    <p>Website institucional responsivo.</p>
-    <a href="https://joaoalmeida23.github.io/site/" target="_blank">Ver Projeto</a>
-  </div>
-
-</div>
-
-<a href="https://github.com/joaoalmeida23" target="_blank" class="btn-primary">
-Ver todos no GitHub
-</a>
-
 </section>
 
-<!-- CONTATO -->
-<section id="contato" class="cta reveal">
-<h2>Vamos criar seu projeto?</h2>
-<p>Tire sua ideia do papel agora.</p>
+<section id="contact" class="contact">
+  <h2>Contato</h2>
+  <p>Entre em contato direto comigo:</p>
 
-<a href="https://wa.me/5511951228125" class="btn-primary">Falar comigo</a>
+  <a class="btn-whatsapp" href="https://wa.me/5511951228125" target="_blank">
+    Falar no WhatsApp
+  </a>
 </section>
 
-<script src="script.js"></script>
+<footer>
+  <p>© 2026 - João Almeida</p>
+</footer>
+
 </body>
 </html>
