@@ -23,7 +23,7 @@ body {
   background: var(--bg);
   color: var(--text);
   transition: 0.3s;
-  scroll-behavior: smooth; /* Scroll suave */
+  scroll-behavior: smooth;
 }
 
 /* HEADER */
@@ -57,30 +57,11 @@ nav a {
 
 /* HERO */
 .hero {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-video {
-  position: absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.4;
-}
-
-.hero-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
+  padding-top: 80px;
 }
 
 .hero-text h1 {
@@ -95,27 +76,15 @@ nav a {
   color: var(--primary);
   font-size: 30px;
   margin-right: 15px;
-  transition: transform 0.3s, color 0.3s; /* animação hover */
+  transition: transform 0.3s, color 0.3s;
 }
 
 .socials a:hover {
   transform: scale(1.3);
-  color: #ff6347; /* muda cor ao passar o mouse */
+  color: #ff6347;
 }
 
-.hero-img img {
-  width: 250px;
-  border-radius: 50%;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-
-/* ABOUT */
+/* SOBRE MIM */
 .about {
   display: flex;
   justify-content: center;
@@ -145,7 +114,37 @@ nav a {
   padding-left: 20px;
 }
 
-/* PROJECTS */
+/* QUADRADOS DE EXPERIÊNCIA */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background: var(--primary);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  flex: 1;
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  font-size: 1rem;
+}
+
+/* PROJETOS */
 .projects {
   padding: 80px 8%;
 }
@@ -180,7 +179,7 @@ nav a {
   font-weight: bold;
 }
 
-/* CONTACT */
+/* CONTATO */
 .contact {
   text-align: center;
   padding: 80px 8%;
