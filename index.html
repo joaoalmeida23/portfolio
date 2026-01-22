@@ -1,174 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
 <meta charset="UTF-8">
-
-<title>João Almeida | Desenvolvedor Full Stack</title>
-
-<meta name="description" content="Portfólio profissional de João Almeida, Desenvolvedor Full Stack especializado em sites modernos e landing pages.">
-<meta name="keywords" content="Desenvolvedor Full Stack, João Almeida, Portfólio Dev, Criador de Sites">
-<meta name="author" content="João Almeida">
+<title>WebNext | João Almeida</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="João Almeida - Desenvolvedor Full Stack especialista em sites modernos e landing pages.">
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <header>
+  <div class="logo">WebNext</div>
 
-  <div class="logo">João<span>.</span></div>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+    </ul>
 
-  <nav id="nav">
-    <a href="#home">Início</a>
-    <a href="#about">Sobre</a>
-    <a href="#projects">Projetos</a>
-    <a href="#contact" class="nav-btn">Contato</a>
+    <a href="https://wa.me/5511951228125" class="btn-contato" target="_blank">Contato</a>
+
+    <div class="theme-toggle" id="themeToggle">
+      🌙
+    </div>
+
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
   </nav>
-
-  <div class="actions">
-
-    <div class="theme-toggle" id="toggle-theme">
-      <i class="fas fa-moon"></i>
-      <i class="fas fa-sun"></i>
-      <span class="ball"></span>
-    </div>
-
-    <div class="burger" id="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-  </div>
-
 </header>
 
-<section id="home" class="hero">
-
-  <div class="hero-content">
-
+<!-- HERO -->
+<section id="inicio" class="hero reveal">
+  <div class="hero-text">
     <h1>Olá, eu sou João Almeida</h1>
-    <p>Desenvolvedor Full Stack focado em criar sites modernos e funcionais que geram resultados reais.</p>
+    <h2>Desenvolvedor Full Stack</h2>
+
+    <p>Crio sites modernos, rápidos e focados em conversão.</p>
 
     <div class="socials">
-      <a href="https://github.com/joaoalmeida23" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/joao-lucas-6a5a59261/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/webnext.dev/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/5511951228125" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://github.com/joaoalmeida23">GitHub</a>
+      <a href="https://www.linkedin.com/in/joao-lucas-6a5a59261/">LinkedIn</a>
+      <a href="https://www.instagram.com/webnext.dev/">Instagram</a>
+      <a href="https://wa.me/5511951228125">WhatsApp</a>
     </div>
 
-    <a href="#contact" class="btn-primary">Entrar em contato</a>
-
-    <div class="stats">
-
-      <div class="stat">
-        <h3>3+</h3>
-        <span>Ano de experiência</span>
-      </div>
-
-      <div class="stat">
-        <h3>2+</h3>
-        <span>Projetos realizados</span>
-      </div>
-
-    </div>
-
+    <a href="#contato" class="btn-primary">Entre em contato</a>
   </div>
+
+  <div class="hero-img">
+    <img src="GALERIA/foto1.jpeg" alt="João Almeida">
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section reveal">
+  <h2>Sobre mim</h2>
+
+  <p>
+    Sou desenvolvedor Full Stack apaixonado por tecnologia e criação de soluções digitais.
+    Trabalho desenvolvendo sites rápidos, responsivos e landing pages focadas em conversão.
+  </p>
+
+  <p>
+    Possuo experiência em Front-end, Back-end e Banco de Dados, sempre buscando performance,
+    design moderno e resultados reais para clientes.
+  </p>
+
+  <ul class="skills">
+    <li>HTML, CSS, JavaScript</li>
+    <li>Java Back-end</li>
+    <li>SQL e Firebase</li>
+    <li>Git & GitHub</li>
+  </ul>
+
+  <a href="https://wa.me/5511951228125" class="btn-primary">Vamos conversar</a>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos" class="section dark-bg reveal">
+<h2>Projetos</h2>
+
+<div class="projects">
+
+  <div class="card">
+    <img src="GALERIA/clinica.png">
+    <h3>Clínica Odontológica</h3>
+    <p>Landing page moderna focada em conversão.</p>
+    <a href="https://joaoalmeida23.github.io/landing-odontologica/" target="_blank">Ver Projeto</a>
+  </div>
+
+  <div class="card">
+    <img src="GALERIA/fotografia.png">
+    <h3>Site Empresarial</h3>
+    <p>Website institucional responsivo.</p>
+    <a href="https://joaoalmeida23.github.io/site/" target="_blank">Ver Projeto</a>
+  </div>
+
+</div>
+
+<a href="https://github.com/joaoalmeida23" target="_blank" class="btn-primary">
+Ver todos no GitHub
+</a>
 
 </section>
 
-<section id="about" class="about">
+<!-- CONTATO -->
+<section id="contato" class="cta reveal">
+<h2>Vamos criar seu projeto?</h2>
+<p>Tire sua ideia do papel agora.</p>
 
-  <div class="about-content">
-
-    <img src="GALERIA/foto1.jpeg" alt="Foto João Almeida">
-
-    <div>
-      <h2>Sobre mim</h2>
-
-      <p>
-        Prazer, eu sou João Almeida.
-Tenho 21 anos e sou Desenvolvedor Full Stack apaixonado por tecnologia e criação de soluções digitais. Atuo no desenvolvimento de sites modernos, landing pages e aplicações web focadas em performance, usabilidade e conversão. Meu objetivo é transformar ideias em produtos digitais eficientes, rápidos e visualmente profissionais, sempre pensando na experiência do usuário e nos resultados do negócio.
-
-
-Atualmente trabalho com desenvolvimento front-end e back-end, integrando interfaces modernas com sistemas funcionais e bancos de dados. Tenho experiência com Java, JavaScript, HTML, CSS, SQL e Firebase, além de versionamento com Git e criação de projetos responsivos e otimizados para web. Busco evolução constante na área de tecnologia e estou sempre aprendendo novas ferramentas e boas práticas do mercado.
-      </p>
-
-      <a href="https://wa.me/5511951228125" class="btn-secondary">Vamos conversar</a>
-    </div>
-
-  </div>
-
-</section>
-
-<section id="projects" class="projects">
-
-  <h2>Projetos</h2>
-
-  <div class="projects-grid">
-
-    <div class="project-card card">
-
-      <img src="GALERIA/clinica.png" alt="Projeto Clínica">
-
-      <h3>Clínica Odontológica</h3>
-
-      <p>Landing page moderna para captação de pacientes.</p>
-
-      <span>HTML • CSS • JavaScript</span>
-
-      <a href="https://joaoalmeida23.github.io/landing-odontologica/" target="_blank">
-        Ver Projeto →
-      </a>
-
-    </div>
-
-    <div class="project-card card">
-
-      <img src="GALERIA/fotografia.png" alt="Projeto Site Institucional">
-
-      <h3>Site Institucional</h3>
-
-      <p>Site profissional para empresa familiar.</p>
-
-      <span>HTML • CSS</span>
-
-      <a href="https://joaoalmeida23.github.io/site/" target="_blank">
-        Ver Projeto →
-      </a>
-
-    </div>
-
-  </div>
-
-  <a href="https://github.com/joaoalmeida23" target="_blank" class="btn-secondary">
-    Ver todos no GitHub
-  </a>
-
-</section>
-
-<section id="contact" class="cta">
-
-  <h2>Vamos criar seu projeto?</h2>
-  <p>Entre em contato agora e vamos tirar sua ideia do papel.</p>
-
-  <a href="https://wa.me/5511951228125" class="btn-primary">
-    Falar no WhatsApp
-  </a>
-
+<a href="https://wa.me/5511951228125" class="btn-primary">Falar comigo</a>
 </section>
 
 <script src="script.js"></script>
-
 </body>
 </html>
