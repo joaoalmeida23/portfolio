@@ -1,22 +1,29 @@
-// Dark mode toggle
+// DARK MODE
+
 const toggle = document.getElementById("toggle-theme");
 
 toggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+  document.body.classList.toggle("light");
 });
 
-// Fade-in ao scroll
-const faders = document.querySelectorAll(".fade");
+// MENU MOBILE
 
-const appearOptions = { threshold: 0.2 };
+const burger = document.getElementById("burger");
+const nav = document.getElementById("nav");
 
-const appearOnScroll = new IntersectionObserver((entries, observer) => {
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+// SCROLL ANIMATION
+
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
+      entry.target.classList.add("show");
     }
   });
-}, appearOptions);
+});
 
-faders.forEach(fader => appearOnScroll.observe(fader));
+document.querySelectorAll(".card,.hero-content,.about-content,.stat")
+.forEach(el => observer.observe(el));
