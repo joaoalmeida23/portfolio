@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <title>João Almeida | Portfólio</title>
+  <title>João Almeida | Desenvolvedor Full Stack</title>
+  <meta name="description" content="Portfólio profissional de João Almeida, Desenvolvedor Full Stack especializado em sites modernos e landing pages.">
+  <meta name="keywords" content="Desenvolvedor Full Stack, João Almeida, Portfólio Dev, Criador de Sites">
+  <meta name="author" content="João Almeida">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome para ícones de redes sociais -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<header class="header">
-  <h2 class="logo">WebNext</h2>
-  <nav>
+<header>
+  <div class="logo">WebNext<span>.</span></div>
+  <nav id="nav">
     <a href="#home">Início</a>
-    <a href="#about">Sobre Mim</a>
+    <a href="#about">Sobre</a>
     <a href="#projects">Projetos</a>
-    <a href="#contact">Contato</a>
+    <a href="#contact" class="nav-btn">Contato</a>
   </nav>
-  <button id="themeToggle">🌙</button>
+  <div class="actions">
+    <div class="theme-toggle" id="toggle-theme">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <span class="ball"></span>
+    </div>
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 </header>
 
 <!-- HERO -->
 <section id="home" class="hero fade">
   <div class="hero-content">
-    <div class="hero-text">
-      <h1>João Almeida</h1>
-      <p>Desenvolvedor Front-End & Landing Pages Profissionais</p>
-      <div class="socials">
-        <a href="https://www.instagram.com/webnext.dev/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/joao-lucas-6a5a59261/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/joaoalmeida23" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://wa.me/5511951228125" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </div>
+    <h1>Olá, eu sou João Almeida</h1>
+    <p>Desenvolvedor Front-End focado em criar sites modernos e profissionais.</p>
+
+    <div class="socials">
+      <a href="https://github.com/joaoalmeida23" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/joao-lucas-6a5a59261/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/webnext.dev/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/5511951228125" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
+
+    <a href="#contact" class="btn-primary">Entrar em contato</a>
   </div>
 </section>
 
 <!-- SOBRE MIM -->
 <section id="about" class="about fade">
-  <div class="about-container">
-    <div class="about-img">
-      <img src="GALERIA/foto1.jpeg" alt="João Almeida">
-    </div>
+  <div class="about-content">
+    <img src="GALERIA/foto1.jpeg" alt="Foto João Almeida">
+
     <div class="about-text">
-      <h2>Sobre Mim</h2>
-      <p>Olá! Meu nome é João Almeida, tenho <strong>21 anos</strong> e sou desenvolvedor Front-End apaixonado por criar landing pages e sites profissionais. Minhas habilidades incluem:</p>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React e Git</li>
-        <li>Design responsivo e UX</li>
-      </ul>
+      <h2>Sobre mim</h2>
+      <p>Sou Desenvolvedor Front-End apaixonado por tecnologia e criação de soluções digitais. Trabalho desenvolvendo sites rápidos, responsivos e focados em conversão.</p>
 
       <!-- QUADRADOS DE EXPERIÊNCIA -->
       <div class="stats">
@@ -66,6 +79,8 @@
           <p>Projetos Realizados</p>
         </div>
       </div>
+
+      <a href="https://wa.me/5511951228125" class="btn-secondary">Vamos conversar</a>
     </div>
   </div>
 </section>
@@ -74,31 +89,31 @@
 <section id="projects" class="projects fade">
   <h2>Projetos</h2>
   <div class="projects-grid">
-    <div class="project-card">
-      <img src="GALERIA/fotografia.png" alt="Projeto 1">
-      <h3>Site Fotografia</h3>
-      <a href="https://joaoalmeida23.github.io/site/" target="_blank">Ver Projeto</a>
+    <div class="project-card card">
+      <img src="GALERIA/clinica.png" alt="Projeto Clínica">
+      <h3>Clínica Odontológica</h3>
+      <p>Landing page moderna para captação de pacientes.</p>
+      <span>HTML • CSS • JavaScript</span>
+      <a href="https://joaoalmeida23.github.io/landing-odontologica/" target="_blank">Ver Projeto →</a>
     </div>
-    <div class="project-card">
-      <img src="GALERIA/clinica.png" alt="Projeto 2">
-      <h3>Landing Page  Clínica Estética</h3>
-      <a href="https://joaoalmeida23.github.io/landing-odontologica/" target="_blank">Ver Projeto</a>
+    <div class="project-card card">
+      <img src="GALERIA/fotografia.png" alt="Projeto Site Institucional">
+      <h3>Site Institucional</h3>
+      <p>Site profissional para empresa familiar.</p>
+      <span>HTML • CSS • JavaScript • Java</span>
+      <a href="https://joaoalmeida23.github.io/site/" target="_blank">Ver Projeto →</a>
     </div>
   </div>
+  <a href="https://github.com/joaoalmeida23" target="_blank" class="btn-secondary">Ver todos no GitHub</a>
 </section>
 
 <!-- CONTATO -->
-<section id="contact" class="contact fade">
-  <h2>Contato</h2>
-  <p>Entre em contato direto comigo:</p>
-  <a class="btn-whatsapp" href="https://wa.me/5511951228125" target="_blank">
-    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
-  </a>
+<section id="contact" class="cta fade">
+  <h2>Vamos criar seu projeto?</h2>
+  <p>Entre em contato agora e vamos tirar sua ideia do papel.</p>
+  <a href="https://wa.me/5511951228125" class="btn-primary"><i class="fab fa-whatsapp"></i> Falar no WhatsApp</a>
 </section>
 
-<footer>
-  <p>© 2026 - João Almeida</p>
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
